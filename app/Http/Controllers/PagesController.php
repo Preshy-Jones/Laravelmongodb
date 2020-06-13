@@ -20,7 +20,8 @@ class PagesController extends Controller
             $user = array( "id"=> $newId, "name"=> $users['name'], "username"=> $users['username'], "email"=> $users['email']);
             array_push($userData, $user);
             file_put_contents($file, json_encode($userData));
-            return response()->json($userData);
+            print_r('User added successfully');
+            //return response()->json($userData);
         }       
             //  return response()->json([
             //      "message" => "student record created"

@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'http://localhost/lsapp/public/newuser'
+        'http://localhost/lsapp/public/newuser',
+        'https://preshylaravelapp.herokuapp.com/newuser'
     ];
 }
